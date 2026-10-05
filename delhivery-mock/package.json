@@ -1,0 +1,22 @@
+{
+  "name": "reclaim-delhivery-mock",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Source-backed Delhivery B2C (+ Maps address validation) mock server for the Reclaim agent, with deterministic failure scenarios.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "exercise": "tsx scripts/exercise.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+.vercel/
+.env
+.env.local
+*.log
+.vercel
+.env*
+
+# Byte-for-byte copies of Delhivery's documentation are kept locally only (not redistributed).
+# docs/sources/SHA256SUMS.txt and docs/sources/README.md are committed so the copies stay verifiable.
+docs/sources/*/
+!.env.example
